@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.stock.mvc">
+	<logger name="com.ericsson.oss">
 		<level value="info" />
 	</logger>
 	

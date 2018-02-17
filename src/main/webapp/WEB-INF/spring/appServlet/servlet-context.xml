@@ -25,7 +25,7 @@
 		<beans:property name="maxUploadSize" value="2097152"></beans:property>
 	</beans:bean>
 	
-	<context:component-scan base-package="com.stock.mvc" />
+	<context:component-scan base-package="com.ericsson.oss" />
 	
 	
 	

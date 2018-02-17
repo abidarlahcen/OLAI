@@ -35,10 +35,10 @@
 				</ul> <!-- /.nav-second-level --></li>
 			<c:url value="/stock/" var="stock" />
 			<li><a href="${stock }"><i class="fa fa-dropbox fa-fw"></i>
-					<fmt:message code="common.stock" /></a></li>
+					<fmt:message code="common.log.import" /></a></li>
 			<c:url value="/vente/" var="vente" />
 			<li><a href="${vente }"><i class="fa fa-shopping-cart fa-fw"></i>
-					<fmt:message code="common.vente" /></a></li>
+					<fmt:message code="common.threshold" /></a></li>
 			<li><a href="#"><i class="fa fa-wrench fa-fw"></i>
 					<fmt:message code="common.parametrage" /><span class="fa arrow"></span></a>
 				<ul class="nav nav-second-level">
