@@ -4,7 +4,7 @@
 		<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
 		<span class="icon-bar"></span> <span class="icon-bar"></span>
 	</button>
-	<a class="navbar-brand" href="javascript:void(0);">Gestion de stock</a>
+	<a class="navbar-brand" href="javascript:void(0);">Predict and Solve --- OSS</a>
 </div>
 <!-- /.navbar-header -->
 
