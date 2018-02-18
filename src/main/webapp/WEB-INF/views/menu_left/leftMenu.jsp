@@ -34,10 +34,10 @@
 					<li><a href="${cdeFournisseur }"><fmt:message code="common.fournisseur.commande" /></a></li>
 				</ul> <!-- /.nav-second-level --></li>
 			<c:url value="/stock/" var="stock" />
-			<li><a href="${stock }"><i class="fa fa-dropbox fa-fw"></i>
+			<li><a href="${stock }"><i class="fa fa-database fa-fw"></i>
 					<fmt:message code="common.log.import" /></a></li>
 			<c:url value="/vente/" var="vente" />
-			<li><a href="${vente }"><i class="fa fa-shopping-cart fa-fw"></i>
+			<li><a href="${vente }"><i class="fa fa-percent fa-fw"></i>
 					<fmt:message code="common.threshold" /></a></li>
 			<li><a href="#"><i class="fa fa-wrench fa-fw"></i>
 					<fmt:message code="common.parametrage" /><span class="fa arrow"></span></a>
