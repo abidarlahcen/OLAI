@@ -25,7 +25,7 @@
 					<c:url value="/commandeclient/" var="cdeClient" />
 					<li><a href="${cdeClient }"><fmt:message code="common.client.commande" /></a></li>
 				</ul> <!-- /.nav-second-level --></li>
-			<li><a href="#"><i class="fa fa-users fa-fw"></i>
+			<li><a href="#"><i class="fa fa-support fa-fw"></i>
 					<fmt:message code="common.fournisseur" /><span class="fa arrow"></span></a>
 				<ul class="nav nav-second-level">
 					<c:url value="/fournisseur/" var="fournisseur" />
