@@ -16,7 +16,7 @@
 		<s:intercept-url pattern="/fournisseur/**" access="ROLE_ADMIN"/>
 		<s:intercept-url pattern="/utilisateur/" access="ROLE_ADMIN"/>
 		<s:intercept-url pattern="/utilisateur/**" access="ROLE_ADMIN"/>
-		
+		<s:intercept-url pattern="/logimport/logimport/" access="ROLE_ADMIN, ROLE_USER"/>
 		<s:form-login login-page="/" default-target-url="/home/" authentication-failure-url="/failedlogin"/>
 		
 		<s:access-denied-handler error-page="/403/"/>

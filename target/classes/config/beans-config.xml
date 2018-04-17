@@ -7,6 +7,22 @@
 		<bean id="articleService" class="com.ericsson.oss.services.impl.ArticleServiceImpl">
 			<property name="dao" ref="articleDao"></property>
 		</bean>
+		<bean id="Dmr_dmtoolDao" class="com.ericsson.oss.dao.impl.Dmr_dmtoolDaoImpl" />
+		<bean id="Dmr_dmtoolService" class="com.ericsson.oss.services.impl.Dmr_dmtoolServiceImpl">
+			<property name="dao" ref="Dmr_dmtoolDao"></property>
+		</bean>
+		<bean id="Df_khDao" class="com.ericsson.oss.dao.impl.Df_khDaoImpl" />
+		<bean id="Df_khService" class="com.ericsson.oss.services.impl.Df_khServiceImpl">
+			<property name="dao" ref="Df_khDao"></property>
+		</bean>
+		<bean id="Smtool_listDao" class="com.ericsson.oss.dao.impl.Smtool_listDaoImpl" />
+		<bean id="Smtool_listService" class="com.ericsson.oss.services.impl.Smtool_listServiceImpl">
+			<property name="dao" ref="Smtool_listDao"></property>
+		</bean>
+		<bean id="SvcsDao" class="com.ericsson.oss.dao.impl.SvcsDaoImpl" />
+		<bean id="SvcsService" class="com.ericsson.oss.services.impl.SvcsServiceImpl">
+			<property name="dao" ref="SvcsDao"></property>
+		</bean>
 		<bean id="categoryDao" class="com.ericsson.oss.dao.impl.CategoryDaoImpl" />
 		<bean id="categoryService" class="com.ericsson.oss.services.impl.CategoryServiceImpl">
 			<property name="dao" ref="categoryDao"></property>
@@ -55,6 +71,10 @@
 		<bean id="flickrDao" class="com.ericsson.oss.dao.impl.FlickrDaoImpl" />
 		<bean id="flickrService" class="com.ericsson.oss.services.impl.FlickrServiceImpl">
 			<property name="dao" ref="flickrDao"></property>
+		</bean>
+	<bean id="OssProblemsDao" class="com.ericsson.oss.dao.impl.OssProblemsDaoImpl" />
+		<bean id="OssProblemsService" class="com.ericsson.oss.services.impl.OssProblemsServiceImpl">
+			<property name="dao" ref="OssProblemsDao"></property>
 		</bean>
 		
 		

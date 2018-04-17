@@ -73,7 +73,7 @@
                                     </div>
 									<div class="form-group">
                                         <label><fmt:message code="common.designation" /></label>
-                                        <f:input path="designation" class="form-control" placeholder="Désignation" />
+                                        <f:input path="designation" class="form-control" placeholder="Designation" />
                                     </div>
 									<div class="form-group">
                                         <label><fmt:message code="common.prixUnitHT" /></label>
