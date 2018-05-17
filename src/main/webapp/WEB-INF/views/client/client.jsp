@@ -56,20 +56,20 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header"><fmt:message code="common.client" /></h1>
+                                        <div class="panel panel-green">
+                        <a><fmt:message code="common.client" /></a>
+                                        </div>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
                 
-                <div class="row">
-					<div class="col-lg-12">
+                <div class="col-lg-12">
 						<ol class="breadcrumb">
 						  <li><a href="<c:url value="/client/nouveau" />" ><i class="fa fa-plus">&nbsp;<fmt:message code="common.ajouter" /></i></a></li>
 						  <li><a href="#"><i class="fa fa-download">&nbsp;<fmt:message code="common.exporter" /></i></a></li>
 						  <li><a href="#"><i class="fa fa-upload">&nbsp;<fmt:message code="common.importer" /></i></a></li>
 						</ol>					
-					</div>                
-                </div>
+					</div>
                 
                 <div class="row">
                 <div class="col-lg-12">
