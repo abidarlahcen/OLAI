@@ -1,4 +1,5 @@
 <%@ include file="/WEB-INF/views/includes/includes.jsp" %>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -30,6 +31,26 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript">
+     var auto = setInterval(    function ()
+     {
+          $('#score').load('reload-window.jsp').fadeIn("slow");
+     }, 5000); // refresh every 5000 milliseconds
+	</script>
+	
+	<script>
+	var logname = '${LogName.getLogName()}';
+    $(document).ready(
+            function() {
+                setInterval(function() {
+                    var randomnumber = Math.floor(Math.random() * 100);
+                    $('#show').text(logname+" Test random number: "+randomnumber);
+                }, 3000);
+            });
+	</script>
+
 </head>
 
 <body>
@@ -54,32 +75,42 @@
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
-                <div class="row">
-	                <div class="col-lg-12">
-	                    <div class="panel panel-primary">
-	                        <div class="panel-heading">
-	                            <fmt:message code="common.log.import" />
-	                        </div>
-	                        <!-- /.panel-heading -->
-	                        
-	                        <div class="panel-body">
-	                        <form action="<c:url value="/logimport/parse" />" method="post">
-	                        	<div class="form-group">
-                                            <label>CMExport</label>
-                                            <input class="form-control" placeholder="Enter chemin du log"  name="chemin">
-  
-                                        </div>
+                
+                <div class="panel panel-default">
+ 				 <!-- Default panel contents -->
+ 					 <div class="panel-heading"><strong>CMExport</strong></div>
+                                        <!-- /.panel-heading -->
                                         
-                                        <button type="submit" class="btn btn-default">parse</button>	    
-                              </form>  
-	                        </div>
-	                        <!-- /.panel-body -->
-	                    </div>
-	                    <!-- /.panel -->
-	                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-                <!-- /.row -->
+                     <div class="panel-body">
+                     <form action="" method="post">
+                     	<table align="center" >
+                        	<tr>
+                                <td>CMExport&nbsp </td>
+                                <td><input class="form-control" placeholder="Chemin des Logs" name="chemin" rows= "5" size= "100" /></td>
+                            </tr>
+                      		<tr>
+                            	<td>Progress&nbsp</td>
+                                <td><br></br><div class="progress">
+  									<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 3em;">
+    										0%
+ 									</div></div>
+								</td>			
+                            </tr>
+                            <tr>
+                             	<td></td>
+                                <td><button type="submit" class="btn btn-primary">Process</button></td>
+                            </tr>
+         				</table>
+         			</form>
+            		</div>
+            		</div>
+            		<div class="panel panel-default">
+            		<div class="panel-heading"><strong>Log Messages</strong></div>         
+                    <div class="panel-body" id="show">
+                    	
+            		</div>
+        		</div>   
+	                    
             </div>
             <!-- /.container-fluid -->
         </div>

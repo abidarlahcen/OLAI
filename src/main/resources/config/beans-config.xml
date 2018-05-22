@@ -72,11 +72,38 @@
 		<bean id="flickrService" class="com.ericsson.oss.services.impl.FlickrServiceImpl">
 			<property name="dao" ref="flickrDao"></property>
 		</bean>
-	<bean id="OssProblemsDao" class="com.ericsson.oss.dao.impl.OssProblemsDaoImpl" />
+	    <bean id="OssProblemsDao" class="com.ericsson.oss.dao.impl.OssProblemsDaoImpl" />
 		<bean id="OssProblemsService" class="com.ericsson.oss.services.impl.OssProblemsServiceImpl">
 			<property name="dao" ref="OssProblemsDao"></property>
 		</bean>
 		
+		<bean id="dfDao" class="com.ericsson.oss.dao.impl.OSS_dfDaoImpl" />
+		<bean id="dfService" class="com.ericsson.oss.services.impl.OSS_dfServiceImpl">
+			<property name="dao" ref="dfDao"></property>
+		</bean>
 		
+		<bean id="vxdiskDao" class="com.ericsson.oss.dao.impl.OSS_vxdiskDaoImpl" />
+		<bean id="vxdiskService" class="com.ericsson.oss.services.impl.OSS_vxdiskServiceImpl">
+			<property name="dao" ref="vxdiskDao"></property>
+		</bean>
 		
+		<bean id="DfSeuilDao" class="com.ericsson.oss.dao.impl.Df_kh_SeuilDaoImpl" />
+		<bean id="DfSeuilService" class="com.ericsson.oss.services.impl.Df_kh_SeuilServiceImpl">
+			<property name="dao" ref="DfSeuilDao"></property>
+		</bean>
+		
+		<bean id="PrtdiagPSDao" class="com.ericsson.oss.dao.impl.OSSPrtdiagPSDaoImpl" />
+		<bean id="PrtdiagPSService" class="com.ericsson.oss.services.impl.OSSPrtdiagPSServiceImpl">
+			<property name="dao" ref="PrtdiagPSDao"></property>
+		</bean>
+		
+		<bean id="PrtdiagMDSDao" class="com.ericsson.oss.dao.impl.OSSPrtdiagMDSDaoImpl" />
+		<bean id="PrtdiagMDSService" class="com.ericsson.oss.services.impl.OSSPrtdiagMDSServiceImpl">
+			<property name="dao" ref="PrtdiagMDSDao"></property>
+		</bean>
+		
+		<bean id="PrtdiagUSDao" class="com.ericsson.oss.dao.impl.OSSPrtdiagUSDaoImpl" />
+		<bean id="PrtdiagUSService" class="com.ericsson.oss.services.impl.OSSPrtdiagUSServiceImpl">
+			<property name="dao" ref="PrtdiagUSDao"></property>
+		</bean>
 </beans>
